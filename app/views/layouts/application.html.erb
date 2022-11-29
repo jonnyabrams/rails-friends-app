@@ -11,10 +11,14 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
   </head>
   <body>
-    <%= yield %>
+
+    <%= render 'home/header' %>
+    <div class="container">
+      <br/>
+      <%= yield %>
+    </div>
   </body>
 </html>
 
