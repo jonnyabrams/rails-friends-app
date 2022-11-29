@@ -1,7 +1,5 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Friend List</h1>
-
 <table class="table">
   <thead>
     <tr>
@@ -22,6 +20,7 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
+        <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
       </tr>
   <% end %>
   </tbody>
