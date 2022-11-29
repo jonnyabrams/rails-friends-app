@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<table class="table">
-  <thead>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
     <tr>
       <th>Name</th>
       <th>Email</th>
@@ -24,11 +24,6 @@
       </tr>
   <% end %>
   </tbody>
-
-<div id="friends">
-  
-</div>
-
 </table>
 
-<%= link_to "New friend", new_friend_path %>
+<%= link_to "New friend", new_friend_path, class:"btn btn-secondary" %>
